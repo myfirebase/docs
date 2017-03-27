@@ -1,8 +1,6 @@
 # Summary
 
-### Introduction
-
-* [Introduction](README.md)
+* [Index](README.md)
 
 ### Getting Started
 
