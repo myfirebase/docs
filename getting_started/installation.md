@@ -47,4 +47,4 @@
 
 You've installed **Myfirebase** correctly.
 
-Now let's dive right in to this framework directory to see what's going on, [Directory Structor](directory_structure.md).
+Now let's dive right in to this framework directory to see what's going on, [Directory Structure](directory_structure.md).
