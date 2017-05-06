@@ -1,24 +1,22 @@
-## Directory Structure
+## Checking out the project structure
 
 By default, Myfireabse Application structure provides a great starting point for your application, For sure, you are free to organize your files/directories however you like.
 
-### Root Directory
+#### Root Directory
 
-The root directory contains **App**, **Components**, **Storage** and **Public** directories. 
+The root directory contains **src**, **build**, **config**, **functions** and **public** directories. 
 
-This directory also houses your gulp.js file so you could re-define your compiled assets files css/js paths however you like. 
+This directory also houses your firebase.json and database.rules.json file.
 
-#### App Directory
+#### `/src`
 
-Where the application core is located, `firebase`, routes.js, main.js.
+Your main code lives here, Where the application core is located, `firebase`, routes, main.js and Vue components, 99% of the time, you'll be working in `src/ `.
 
  - assets directory, where you can write your global sass/scss preprocessor.
 
  - `firebase` directory, contains firebase SDK class and config.js file, 
-    
-    config file handle firebase SDK config API tokens, database link, auth domain.
 
- - routes.js file, where you can define your application routes, [Vuejs Routes Docs](https://router.vuejs.org/en/). 
+ - routes directory, where you can define your application routes, [Vuejs Routes Docs](https://router.vuejs.org/en/). 
 
  - main.js file where your application core is defined. 
 
@@ -40,7 +38,7 @@ This directory contains all of defaults components such like:
 
 For sure, you are free to define and organize this directory structure however you like.
 
-#### Storage Directory
+#### `/storage`
 
 The Storage Directory contains all of your storage files.
 
@@ -59,7 +57,3 @@ Public directory contains the main index.html file, this directory also houses a
  - css *css directory*
 
  - js *js directory*
-
- - fonts *fonts directory*
-
-
