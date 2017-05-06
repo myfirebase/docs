@@ -32,7 +32,7 @@ The Storage Directory contains all of your storage files.
 
 Storage is a state management pattern + library for Vue.js applications, Vuex keeps components communicating to each other, see [Vuex](https://vuex.vuejs.org/en/).
 
-#### Public Directory
+#### `/public`
 
 Public directory contains the main index.html file, this directory also houses all of your application compiled assets files css/js, **these assets will be injected to index.html automatically**
 
