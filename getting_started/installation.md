@@ -1,4 +1,5 @@
-### Installation
+
+##Installation
 
 #### Prerequisites
 
@@ -14,34 +15,46 @@
 
 2. **Firebase command line interface**, `npm install -g firebase-tools`
 
-3. **Gulp** to automate and enhance your workflow, `npm install -g gulp`
-
 #### Installing Myfirebase
 
-1. Clone the repository
+```shell
+# Clone the repository
+git clone https://github.com/myfirebase/myfirebase
 
-   `git clone https://github.com/myfirebase/myfirebase`
+# Change directory
+cd myfirebase
 
-2. Change directory
-   
-   `cd myfirebase`
+# Install dependencies
+npm install
 
-3. Install dependencies
-   
-   `npm install`
+# Sign in using your Google account
+firebase login
 
-4. Initialize firebase project
-   
-   `npm run init`
+# Initialize firebase project
+firebase init
+```
 
-5. Compile assets
-  
-   `npm run dev`
+#### Run dev server
 
-6. Run the server
-   
-   `npm run serve`
+```shell
+# Run the server
+npm run dev
+```
 
+#### Production
+
+
+```shell
+# Production
+npm run build
+```
+
+#### Deploy your project
+
+```shell
+# Deploy project
+firebase deploy
+```
 
 #### Congratulations
 
