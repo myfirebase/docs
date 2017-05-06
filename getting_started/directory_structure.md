@@ -12,29 +12,15 @@ This directory also houses your firebase.json and database.rules.json file.
 
 Your main code lives here, Where the application core is located, `firebase`, routes, main.js and Vue components, 99% of the time, you'll be working in `src/ `.
 
- - assets directory, where you can write your global sass/scss preprocessor.
+ - `/src/assets` directory, where you can write your global sass/scss preprocessor.
 
- - `firebase` directory, contains firebase SDK class and config.js file, 
+ - `/src/firebase` directory, contains firebase SDK class and config.js file, 
 
- - routes directory, where you can define your application routes, [Vuejs Routes Docs](https://router.vuejs.org/en/). 
+ - `/src/routes` directory, where you can define your application routes, [Vuejs Routes Docs](https://router.vuejs.org/en/). 
 
  - main.js file where your application core is defined. 
 
-#### Component Directory
-
-Component Directory,as the name implies, contains all of your application's components files, here where you can create new Vue components, according to Vuejs, components took **.vue** as extensions. See [Vuejs Components](https://vuejs.org/v2/guide/components.html).
-
-This directory contains all of defaults components such like:
-
- - **Login.vue** : Login/register component (Auth Example).
-
- - **App.vue** : An example of real time database.
-
- - **UpdateProfile.vue** : An example of updating user profile (Auth/storage Example).
-
- - **Welcome.vue / Landing.vue** : Default app index component.
-
- - **Navbar.vue** : Default Navbar component.
+ - `/src/component` directory as the name implies, contains alll of your application components files, here wjere you can create new Vue components, according to vuejs, components took **.vue** as extemsion, see [Vuejs Components](https://vuejs.org/v2/guide/components.html).
 
 For sure, you are free to define and organize this directory structure however you like.
 
@@ -48,7 +34,7 @@ Storage is a state management pattern + library for Vue.js applications, Vuex ke
 
 #### Public Directory
 
-Public directory contains the main index.html file, this directory also houses all of your application's compiled assets files css/js.
+Public directory contains the main index.html file, this directory also houses all of your application compiled assets files css/js, **these assets will be injected to index.html automatically**
 
  - index.html *index page*
 
