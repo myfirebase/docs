@@ -43,3 +43,11 @@ Public directory contains the main index.html file, this directory also houses a
  - css *css directory*
 
  - js *js directory*
+
+#### `/build`
+
+Apparently you may not touch anything right here, this directory contains all the **build** files managed by node.js
+
+#### `/config`
+
+Where development and production mode configuration is located.
