@@ -324,6 +324,6 @@ Syntax : `$auth.signInWithTwitter(object)`
 
 #### SignIn with Github
 
-To let your users authenticate with Firebase using their **Twitter Accounts**.
+To let your users authenticate with Firebase using their **Github Accounts**.
 
 Syntax : `$auth.signInWithGithub(object)`
