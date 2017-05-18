@@ -46,6 +46,81 @@ Basically `$auth` instance is your key to get access and manage **firebase auth*
 
 <hr>
 
+#### Get Firebase Auth Module
+
+To retrieve firebase auth module.
+
+Syntax : `$auth.getAuth()`
+
+<hr>
+
+#### Get current user
+
+You can get the current signed in user by calling global auth instance.
+
+Syntax : `$auth.getUser()`
+
+##### Example
+
+```html
+<script>
+    export default {
+        mounted() {
+            // get current user
+            let user = this.$auth.getUser()
+            // get email
+            console.log(user.email)
+            // get username
+            console.log(user.displayName)
+        }
+    }
+</script>
+```
+
+<hr>
+
+#### Update Profile Picture
+
+You can update profile pricture usign `updateProfilePicture(object)` method, this will update the default firebase user **profileURL**.
+
+> Before you start updating profile picture, make sure that you have uploaded that picture to firebase storage, and get photoURL, see [Upload a file with Myfirebase]().
+
+Syntax : `$auth.updateProfilePicture(object)`
+
+##### Example
+
+```html
+<script>
+    export default {
+        mounted () {
+
+        },
+        data () {
+            return {
+                // link to profile photo
+                picture: 'https://link-to-photo.test/profile.png'
+            }
+        },
+        methods:{
+            // update profile picture
+            updateProfilePicture() {
+                this.$auth.updateProfilePicture({
+                    // picture link
+                    ref: this.picture,
+                    result: () => {
+                        //updated
+                    },
+                    error: (error) => {
+                        console.log(error.message)
+                    }
+                })
+            }
+        }
+    }
+<script>
+```
+<hr>
+
 #### Auth state
 
 Syntax : `$auth.state(object)`
