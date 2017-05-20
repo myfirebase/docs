@@ -402,3 +402,11 @@ Syntax : `$auth.signInWithTwitter(object)`
 To let your users authenticate with Firebase using their **Github Accounts**.
 
 Syntax : `$auth.signInWithGithub(object)`
+
+<hr>
+
+#### Logout
+
+To sign out a user, call `logout`.
+
+Syntax : `$auth.logout()`
