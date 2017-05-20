@@ -405,7 +405,7 @@ Syntax : `$auth.signInWithGithub(object)`
 
 <hr>
 
-#### Logout
+#### SignOut
 
 To sign out a user, call `logout`.
 
