@@ -24,6 +24,7 @@
     * [SingIn with facebook](functionalities/auth.md#signin-with-facebook)
     * [SignIn with twitter](functionalities/auth.md#signin-with-twitter)
     * [SignIn with Github](functionalities/auth.md#signin-with-github)
+    * [SignOut](functionalities/auth.md#Signout)
 
 * [Storage]()
     * [Storage Instace]()
