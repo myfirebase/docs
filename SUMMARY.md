@@ -26,7 +26,7 @@
     * [SignIn with Github](functionalities/auth.md#signin-with-github)
     * [SignOut](functionalities/auth.md#Signout)
 
-* [Storage]()
+* [Storage](functionalities/storage.md)
     * [Storage Instace]()
     * [Get storage instance]()
     * [Upload file]()
