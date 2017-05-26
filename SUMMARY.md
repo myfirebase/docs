@@ -27,11 +27,11 @@
     * [SignOut](functionalities/auth.md#Signout)
 
 * [Storage](functionalities/storage.md)
-    * [Storage Instace]()
-    * [Get storage instance]()
-    * [Upload file]()
-    * [Get DonwloadURL]()
-    * [Delete]()
+    * [Storage Instace](functionalities/storage.md#myfirebase-storage-instance)
+    * [Get storage instance](functionalities/storage.md#get-firebase-storage-instance)
+    * [Upload file](functionalities/storage.md#get-file-url)
+    * [Get DonwloadURL](functionalities/storage.md#upload-file)
+    * [Delete file](functionalities/storage.md#delete-file)
 
 * [Firebase database]()
     * [VueFire]()
