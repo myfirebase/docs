@@ -29,7 +29,7 @@ You can get your file URL such like user avatar or document which stored through
 ##### Example
 
 ```html
-<tempalte>
+<template>
     <div class = "container">
         <img :src="avatar" alt="user-avatar" />
     </div>
