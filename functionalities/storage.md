@@ -123,7 +123,7 @@ Syntax : `$storage.delete(string)`
 
 You can delete a file with `delete` method specifying the file path.
 
-> file path is a storage path where the concerned file is located..
+> file path is a storage path where the concerned file is located.
 
 ##### Example
 
