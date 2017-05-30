@@ -4,5 +4,11 @@
 
 <h3 align="center"><b>Myfirebase</b> <i>SPA Framework</i></h3>
 
-**Myfirebase** is a decoupled single page application framework using Vuejs and firebase as a back-end.
+**Myfirebase** is a decoupled single page application framework which is highly compatible with google firebase.
 
+
+ - **Easy to use** : Simple, nice directory structure.
+
+ - **Separation of concerns** : Using [Vuejs](https://vuejs.org) components and [Vuex](https://vuex.vuejs.org) a state management system.
+
+ - **Firebase** : Authentication, Reeltime Database, Cloud storage, all in one.
