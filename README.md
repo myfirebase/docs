@@ -2,7 +2,7 @@
 	<img src="http://i.imgur.com/eui4MCQ.png" alt="Myfirebase">
 </p>
 
-<h3 align="center"><b>Myfirebase</b> <i>SPA Framework</i></h3>
+<h3 align="center"><b>Myfirebase</b> <i>SPA Framework</i> Documentation</h3>
 
 **Myfirebase** is a decoupled single page application framework which is highly compatible with google firebase.
 
