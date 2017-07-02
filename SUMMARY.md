@@ -32,6 +32,3 @@
     * [Upload file](functionalities/storage.md#get-file-url)
     * [Get DonwloadURL](functionalities/storage.md#upload-file)
     * [Delete file](functionalities/storage.md#delete-file)
-
-* [Firebase database]()
-    * [VueFire]()
