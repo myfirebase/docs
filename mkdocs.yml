@@ -1,0 +1,20 @@
+site_name: Myfirebase docs
+
+theme_dir: 'mkdocs-material/material'
+
+repo_name: myfirebase/myfirebase
+repo_url: https://github.com/myfirebase/myfirebase
+
+pages:
+- Welcome: index.md
+
+- Getting Started:
+    - 'Installation': 'installation.md'
+    - 'Directory Structure': 'directory-structure.md'
+
+- Functionalies:
+    - 'Authentication': 'authentication.md'
+    - 'Cloud Storage': 'storage.md'
+
+markdown_extensions:
+  - admonition
