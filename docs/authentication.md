@@ -1,6 +1,6 @@
 
 !!! tip 
-    Before you begin, please check the [firebase auth docs](https://firebase.google.com/docs/auth/web/start).
+    It's recommended to take a look at the firebase authentication docs, please check [firebase auth docs](https://firebase.google.com/docs/auth/web/start).
 
 How hard it is to integrate **Firebase auth** to your web project especially when you try to structure and orginize firebase auth globally to be used through all **Vue components**.
 
