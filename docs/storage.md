@@ -1,4 +1,5 @@
-> Before you begin, please check the [firebase storage docs](https://firebase.google.com/docs/storage/web/start).
+!!! tip
+    It's recommended to take a look at the firebase storage docs, please check [firebase storage docs](https://firebase.google.com/docs/storage/web/start).
 
 Myfirebase provides a simple way to interact with firebase storage via a global instance `$sotrage`.
 
@@ -14,7 +15,7 @@ Syntax : `$storage`
 
 Syntax : `$storage.get()`
 
-You can retrive firebase storage object usign `get()` method.
+You can retreive firebase storage object usign `get()` method.
 
 <hr>
 
