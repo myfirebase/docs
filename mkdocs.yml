@@ -18,8 +18,13 @@ pages:
 
 markdown_extensions:
   - admonition
+  - codehilite(guess_lang=false)
+  - toc(permalink=true)
 
 site_favicon: 'img/favicon.ico'
 
 extra:
-   logo: 'img/favicon.png'
+  logo: 'img/MyFireBase.png'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
