@@ -20,21 +20,34 @@ Your main code lives here, Where the application core is located, `firebase`, ro
 
  - main.js file where your application core is defined. 
 
- - `/src/component` directory as the name implies, contains alll of your application components files, here wjere you can create new Vue components, according to vuejs, components took **.vue** as extemsion, see [Vuejs Components](https://vuejs.org/v2/guide/components.html).
+ - `/src/component` directory as the name implies, contains all of your application components files, here wjere you can create new Vue components, according to vuejs, components took **.vue** as extemsion, see [Vuejs Components](https://vuejs.org/v2/guide/components.html).
 
 For sure, you are free to define and organize this directory structure however you like.
 
+#### `/functions`
+
+!!! tip "Firebase Cloud functions docs"
+    New to firebase?, please see [Firebase Cloud functions docs](https://firebase.google.com/docs/functions/).
+
+Firebase cloud functions directory, where the cloud functions are located, in this directory you could write some back-end functions to handle cloud messaging and business logic if necessary and alot of advanced stufs. 
+
+!!! tip "Google Cloud Platform"
+    It's become more easier to integrate some advanced stufs such like machine learning and image processing with [Google Cloud Platform](https://cloud.google.com).
+
 #### `/storage`
 
-The Storage Directory contains all of your storage files.
+The storage directory contains all of your storage files.
 
 **What is storage??**
 
-Storage is a state management pattern + library for Vue.js applications, Vuex keeps components communicating to each other, see [Vuex](https://vuex.vuejs.org/en/).
+Storage contains state management pattern + library for Vue.js applications files, Thanks to Vuex for keeping components communicating to each other, see [Vuex](https://vuex.vuejs.org/en/).
 
 #### `/public`
 
-Public directory contains the main index.html file, this directory also houses all of your application compiled assets files css/js, **these assets will be injected to index.html automatically**
+Public directory contains the main index.html file, this directory also houses all of your application compiled assets files css/js and service-workers as well, **these assets will be injected to index.html automatically**
+
+!!! note "service workers"
+    Google developers had made some cool articles about service, see [Service Workers: an Introduction](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers).
 
  - index.html *index page*
 
@@ -44,6 +57,12 @@ Public directory contains the main index.html file, this directory also houses a
 
  - js *js directory*
 
+ - service-worker.js
+
+ - firebase-messaging-sw.js
+
+ - manifest.json
+
 #### `/build`
 
 Apparently you may not touch anything right here, this directory contains all the **build** files managed by node.js
@@ -51,3 +70,11 @@ Apparently you may not touch anything right here, this directory contains all th
 #### `/config`
 
 Where development and production mode configuration is located.
+
+#### `/static`
+
+Where static files are located, images and icons are used as a static assets into your applications and provide them to support Progressive web applications.
+
+#### `/tests`
+
+Where your application tests are located, by defualt Myfirebase comes with eslint and karma for unit testing, you are free to integrate others libraries and plugins such like [night watch](http://nightwatchjs.org/) e2e.
