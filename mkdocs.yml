@@ -18,3 +18,8 @@ pages:
 
 markdown_extensions:
   - admonition
+
+site_favicon: 'img/favicon.ico'
+
+extra:
+   logo: 'img/favicon.png'
