@@ -15,3 +15,7 @@
  - **Separation of concerns** : Using [Vuejs](https://vuejs.org) components and [Vuex](https://vuex.vuejs.org) a state management system.
 
  - **Firebase** : Authentication, Reeltime Database, Cloud storage, all in one.
+
+ - **Progressive web applications** : PWA made easy.
+
+ - **Material design** : material components using [vue-material](https://vuematerial.github.io).
