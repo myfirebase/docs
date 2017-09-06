@@ -12,11 +12,13 @@
 
 2. **Firebase command line interface**, `npm install -g firebase-tools`
 
+3. **Myfirebase installer**, `npm install -g myfirebase-cli`
+
 #### Installing Myfirebase
 
 ```shell
-# Clone the repository
-git clone https://github.com/myfirebase/myfirebase
+# Create new project with myfirebase-cli
+$ myfirebase my-project
 
 # Change directory
 cd myfirebase
