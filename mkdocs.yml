@@ -12,7 +12,7 @@ pages:
     - 'Installation': 'installation.md'
     - 'Directory Structure': 'directory-structure.md'
 
-- Functionalies:
+- Functionalities:
     - 'Authentication': 'authentication.md'
     - 'Cloud Storage': 'storage.md'
 
