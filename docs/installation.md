@@ -21,23 +21,23 @@
 $ myfirebase my-project
 
 # Change directory
-cd myfirebase
+$ cd myfirebase
 
 # Install dependencies
-npm install
+$ npm install
 
 # Sign in using your Google account
-firebase login
+$ firebase login
 
 # Initialize firebase project
-firebase init
+$ firebase init
 ```
 
 #### Run dev server
 
 ```shell
 # Run the server
-npm run dev
+$ npm run dev
 ```
 
 #### Production
@@ -45,14 +45,14 @@ npm run dev
 
 ```shell
 # Production
-npm run build
+$ npm run build
 ```
 
 #### Deploy your project
 
 ```shell
 # Deploy project
-firebase deploy
+$ firebase deploy
 ```
 
 #### Congratulations
