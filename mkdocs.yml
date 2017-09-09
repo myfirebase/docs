@@ -15,6 +15,7 @@ pages:
 - Functionalities:
     - 'Authentication': 'authentication.md'
     - 'Cloud Storage': 'storage.md'
+    - 'Cloud Functions': 'cloudfunctions.md'
 
 markdown_extensions:
   - admonition
