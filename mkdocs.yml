@@ -16,7 +16,7 @@ pages:
     - 'Authentication': 'authentication.md'
     - 'Cloud Storage': 'storage.md'
     - 'Cloud Functions': 'cloudfunctions.md'
-
+    - 'Cloud Messaging': 'cloudmessaging.md'
 markdown_extensions:
   - admonition
   - codehilite(guess_lang=false)
