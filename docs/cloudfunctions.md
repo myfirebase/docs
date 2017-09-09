@@ -60,4 +60,4 @@ exports.sendMessageNotification = functions.database.ref('data/{messageID}').onW
 As you can see it's easy to write functions with firebase cloud functions.
 
 !!! info "Firebase cloude messaging" 
-    This example of sending push notification requires to register a service-worker through client site (browser) which is already defined in this project, see [Cloud messaging]().
+    This example of sending push notification requires to register a service-worker through client site (browser) which is already defined in this project.
