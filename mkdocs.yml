@@ -6,17 +6,32 @@ repo_name: myfirebase/myfirebase
 repo_url: https://github.com/myfirebase/myfirebase
 
 pages:
+
 - Welcome: index.md
 
 - Getting Started:
     - 'Installation': 'installation.md'
     - 'Directory Structure': 'directory-structure.md'
 
-- Functionalities:
+- The Basics:
+    - "Components (coming soon)": 'index.md'
+    - "Routing (coming soon)": 'index.md'
+    - "State Managment System (coming soon)": 'index.md'
+
+- SASS/SCSS:
+    - 'Define SASS/SCSS (coming soon)': 'index.md'
+
+- Functionalities: 
     - 'Authentication': 'authentication.md'
     - 'Cloud Storage': 'storage.md'
     - 'Cloud Functions': 'cloud-functions.md'
     - 'Cloud Messaging': 'cloud-messaging.md'
+
+- Deep Dive:
+    - "Middlewares (coming soon)": 'index.md'
+    - "BeforeEnter Middleware (coming soon)": 'index.md'
+    - "Firebase Admin (Feature request)"
+
 markdown_extensions:
   - admonition
   - codehilite(guess_lang=false)
