@@ -14,8 +14,8 @@ pages:
     - 'Directory Structure': 'directory-structure.md'
 
 - The Basics:
-    - "Components (coming soon)": 'index.md'
-    - "Routing (coming soon)": 'index.md'
+    - "Components (coming soon)": 'components.md'
+    - "Routing (coming soon)": 'routing.md'
     - "State Managment System (coming soon)": 'index.md'
 
 - SASS/SCSS:
@@ -28,9 +28,9 @@ pages:
     - 'Cloud Messaging': 'cloud-messaging.md'
 
 - Deep Dive:
-    - "Middlewares (coming soon)": 'index.md'
-    - "BeforeEnter Middleware (coming soon)": 'index.md'
-    - "Firebase Admin (Feature request)"
+    - 'Middlewares (coming soon)': 'index.md'
+    - 'BeforeEnter Middleware (coming soon)': 'index.md'
+    - 'Firebase Admin (Feature request)': 'index.md'
 
 markdown_extensions:
   - admonition
