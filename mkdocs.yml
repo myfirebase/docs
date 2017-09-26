@@ -14,9 +14,9 @@ pages:
     - 'Directory Structure': 'directory-structure.md'
 
 - The Basics:
-    - "Components (coming soon)": 'components.md'
-    - "Routing (coming soon)": 'routing.md'
-    - "State Managment System (coming soon)": 'index.md'
+    - "Components": 'components.md'
+    - "Routing": 'routing.md'
+    - "State Managment System (coming soon)": 'store.md'
 
 - SASS/SCSS:
     - 'Define SASS/SCSS (coming soon)': 'index.md'
