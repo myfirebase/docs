@@ -16,10 +16,10 @@ pages:
 - The Basics:
     - "Components": 'components.md'
     - "Routing": 'routing.md'
-    - "State Managment System (coming soon)": 'store.md'
+    - "State Managment System": 'store.md'
 
-- SASS/SCSS:
-    - 'Define SASS/SCSS (coming soon)': 'index.md'
+- Managing SCSS/SASS:
+    - 'Material design and SASS/SCSS': 'style.md'
 
 - Functionalities: 
     - 'Authentication': 'authentication.md'
@@ -28,9 +28,9 @@ pages:
     - 'Cloud Messaging': 'cloud-messaging.md'
 
 - Deep Dive:
-    - 'Middlewares (coming soon)': 'index.md'
-    - 'BeforeEnter Middleware (coming soon)': 'index.md'
-    - 'Firebase Admin (Feature request)': 'index.md'
+    - 'Middlewares (Global Navigation guards)': 'global-guard.md'
+    - 'BeforeEnter Middleware': 'before-enter.md'
+    - 'Firebase Admin (Feature request)': 'admin.md'
 
 markdown_extensions:
   - admonition
