@@ -23,7 +23,7 @@
 $ myfirebase my-project
 
 # Change directory
-$ cd myfirebase
+$ cd my-project
 
 # Install dependencies
 $ npm install
