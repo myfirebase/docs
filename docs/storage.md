@@ -1,7 +1,7 @@
 !!! tip
     It's recommended to take a look at the firebase storage docs, please check [firebase storage docs](https://firebase.google.com/docs/storage/web/start).
 
-Myfirebase provides a simple way to interact with firebase storage via a global instance `$sotrage`.
+Myfirebase provides a simple way to interact with firebase storage via a global instance called `$sotrage`.
 
 #### Myfirebase Storage instance
 
