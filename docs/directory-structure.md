@@ -65,11 +65,11 @@ Public directory contains the main index.html file, this directory also houses a
 
 #### `/build`
 
-Apparently you may not touch anything right here, this directory contains all the **build** files managed by node.js
+Apparently, you may not touch anything right here, this directory contains all the **build** files managed by node.js
 
 #### `/config`
 
-Where development and production mode configuration is located.
+Where development and production mode configurations are located.
 
 #### `/static`
 
