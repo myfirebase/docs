@@ -118,7 +118,7 @@ Syntax : `$auth.updateProfilePicture(object)`
             }
         }
     }
-<script>
+</script>
 ```
 <hr>
 
