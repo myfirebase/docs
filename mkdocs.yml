@@ -29,7 +29,6 @@ pages:
 
 - Deep Dive:
     - 'Middlewares (Global Navigation guards)': 'global-guard.md'
-    - 'BeforeEnter Middleware': 'before-enter.md'
     - 'Firebase Admin (Feature request)': 'admin.md'
 
 markdown_extensions:
