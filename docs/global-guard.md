@@ -10,7 +10,7 @@ As the name implies, the navigation guards provided by vue-router are primarily 
 
 Myfirebase provides a simple way to create navigations guards or middlewares, you could simply run `myfirebase new:middleware <middleware-name>`. Myfirebase-cli will generate a middleware template for you located in `/src/middlewares/` directory.
 
-The middleware generated might look something like this:
+Typically, The middleware generated might look something like this:
 
 ```javascript
 /**
@@ -34,7 +34,25 @@ export default MiddlewareName
 ```
 #### Registring middlware
 
-If you want a middleware to run during every route navigation to your application, simply list the middleware function in the `middleware` property of your `/src/middlewares/index.js`.
+If you want a middleware to run during every route navigation to your application, simply list the middleware function in the `middlewares` array of your `/src/middlewares/index.js`.
+
+```javascript
+/**
+ * Here where you can register your middlewares
+ * you could simply do that by adding them to the middlewares array.
+ */
+
+// import AuthMiddleware.
+import AuthMiddleware from './auth'
+
+// import your new middleware.
+import MiddlewareName from './MiddlewareName'
+
+// register AuthMiddleware and MiddlewareName.
+const middlewares = [AuthMiddleware, MiddlewareName]
+
+export default middlewares
+```
 
 #### Auth Middleware
 
@@ -44,9 +62,7 @@ As you may notice, you will find in the **route.js** file a **metadata** called 
 
 !!! tip
     Routing [docs](routing.md).
-
-### Auth middleware
-
+ 
 ```javascript
 /**
  * AuthMiddleware, you can get access
@@ -74,3 +90,50 @@ const AuthMiddleware = (myfirebase, actions) => {
 
 export default AuthMiddleware
 ```
+
+### Myfirebase and Per-Route Guard
+
+You can define beforeEnter guards directly on a route's configuration object, and also retrieve Firebase Auth, database, and storage by importing Vue:
+
+```javascript
+
+// Components.
+import Welcome from '@/components/Welcome'
+import Example from '@/components/Example'
+
+//Vue.
+import Vue from 'vue'
+
+const routes = [{
+        path: '/',
+        component: Landing,
+        children: [{
+                path: '/',
+                component: Welcome,
+                name: 'Welcome'
+            },
+            {
+                path: '/example'
+                component: Example,
+                name: 'example',
+                // Pre-Route Guard.
+                beforeEnter: (to, from, next) => {
+                    // retrieve firebase Auth
+                    var auth = Vue.auth;
+                    if(auth.user().email === "example@mail.com"){
+                        next()
+                    }else{
+                        next({path: '/login'})
+                    }
+                } 
+            }
+        ]
+    },
+    {
+        path: '*',
+        components: NotFound
+    }
+]
+```
+
+These guards have the exact same signature as global before guards.
