@@ -44,7 +44,7 @@ Storage contains state management pattern + library for Vue.js applications file
 
 #### `/public`
 
-Public directory contains the main index.html file, this directory also houses all of your application compiled assets files css/js and service-workers as well, **these assets will be injected to index.html automatically**
+Public directory contains the main index.html file, this directory also houses all of your application compiled assets files css/js and service-workers as well, **these assets will auto be injected to index.html**
 
 !!! note "service workers"
     Google developers had made some cool articles about service, see [Service Workers: an Introduction](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers).
