@@ -12,9 +12,9 @@
 
  - **Easy to use** : Simple and nice directory structure.
 
- - **Separation of concerns** : Using [Vuejs](https://vuejs.org) components and [Vuex](https://vuex.vuejs.org) a state management system.
+ - **Separation of concerns** : Using [Vuejs](https://vuejs.org) components and [Vuex](https://vuex.vuejs.org) state management system.
 
- - **Firebase** : Authentication, Reeltime Database, Cloud storage, all in one.
+ - **Firebase** : Authentication, Realtime Database, Cloud storage, all in one.
 
  - **Progressive web applications** : PWA made easy.
 
