@@ -32,7 +32,7 @@ $ npm install
 - Create a new project through firebase [console](https://console.firebase.google.com).
 
 !!! info
-    After creating a new firbase project, copy and past the configuration object in you project, `/src/firebase/config.js` 
+    After creating a new firbase project, copy and past the configuration object in your project, `/src/firebase/config.js` 
 
 - Login with your google account. 
 
