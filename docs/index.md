@@ -7,15 +7,15 @@
 !!! info
 	Welcome to Myfirebase docs, in this guide, we assume that you already familiar with [VueJs framework ecosystem](http://vuejs.org), [webpack](https://webpack.github.io/), [Firebase](https://firebase.google.com) and [node package manager](https://www.npmjs.com/).
 
-**Myfirebase** is a decoupled single page application framework which is highly compatible with google firebase.
+**Myfirebase** is a decoupled single page application framework which is highly compatible with [Google Firebase](https://firebase.google.com). It has some some really cool features.
 
 
- - **Easy to use** : Simple and nice directory structure.
+ - **Easy to use** : With a simple, clear and well organised directory structure.
 
- - **Separation of concerns** : Using [Vuejs](https://vuejs.org) components and [Vuex](https://vuex.vuejs.org) state management system.
+ - **Separation of concerns** : Using [Vuejs](https://vuejs.org) components and [Vuex](https://vuex.vuejs.org) for the state management system.
 
- - **Firebase** : Authentication, Realtime Database, Cloud storage, all in one.
+ - **Firebase** : Using the best of Google Firebase features such as, Authentication, Realtime Database, Cloud storage and others...
 
  - **Progressive web applications** : PWA made easy.
 
- - **Material design** : material components using [vue-material](https://vuematerial.github.io).
+ - **Material design** : Material components using [vue-material](https://vuematerial.github.io).
