@@ -7,7 +7,7 @@
 !!! info
 	Welcome to Myfirebase docs, in this guide, we assume that you already familiar with [VueJs framework ecosystem](http://vuejs.org), [webpack](https://webpack.github.io/), [Firebase](https://firebase.google.com) and [node package manager](https://www.npmjs.com/).
 
-**Myfirebase** is a decoupled single page application framework which is highly compatible with [Google Firebase](https://firebase.google.com). It has some some really cool features.
+**Myfirebase** Is a decoupled single page application framework which is highly compatible with [Google Firebase](https://firebase.google.com). It has some really cool features.
 
 
  - **Easy to use** : With a simple, clear and well organised directory structure.
