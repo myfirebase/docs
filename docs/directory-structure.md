@@ -1,6 +1,4 @@
-## Checking out the project structure
-
-By default, Myfireabse Application structure provides a great starting point for your application, For sure, you are free to organize your files/directories however you like.
+By default, Myfirebase application structure provides a great starting point for your application. However, you are free to organize your files/directories as you like.
 
 #### Root Directory
 
