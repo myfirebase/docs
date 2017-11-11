@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="http://i.imgur.com/eui4MCQ.png" alt="Myfirebase">
+	<img src="https://i.imgur.com/eui4MCQ.png" alt="Myfirebase">
 </p>
 
 <h3 align="center"><b>Myfirebase</b> <i>SPA Framework</i> Documentation</h3>
