@@ -1,6 +1,6 @@
 #### Prerequisites
 
-1. **NPM** is the recommended installation method when building large scale applications with **Myfirebase**.
+1. **NPM** is the recommended installation method when building large-scaled applications with **Myfirebase**.
 
     If this is the first time you want to give **npm** a shot, don't worry, we got exactly what you need.
 
@@ -29,12 +29,12 @@ $ cd my-project
 $ npm install
 ```
 
-- Create a new project through [Firebase Console](https://console.firebase.google.com).
+- Create a new project through the [Firebase Console](https://console.firebase.google.com).
 
 !!! info
-    After creating a new Google Firebase project, copy and past the configuration informations in your project, `/src/firebase/config.js`. You can get your configuration informations by clicking on "Add Firebase to your web app" on the Overview page. 
+    After creating a new Google Firebase project, copy and paste the configuration information into your project, `/src/firebase/config.js`. You can get your configuration information by clicking on "Add Firebase to your web app" on the Overview page. 
 
-- Login with your google account. 
+- Login to your Google account.. 
 
 ```shell
 # Sign in using your Google account
@@ -54,7 +54,7 @@ $ npm run dev
 #### Congratulations
 
 !!! success "Congratulations"
-    You've now installed **Myfirebase** correctly, now let's dive in the framework directory structure to see what's going under the hood, [Directory Structure](directory-structure.md).
+    You've now installed **Myfirebase** correctly, now let's dive into the framework directory structure to see what's going under the hood, [Directory Structure](directory-structure.md).
 
 #### Production
 
