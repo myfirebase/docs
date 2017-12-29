@@ -1,4 +1,4 @@
-At a high level, components are custom elements that Vue compiler would attach specified behavior to. They contain your HTML, scripts and stylesheets at the same time in one file. 
+At the high level, components are custom elements that Vue compiler would attach specified behavior too. They contain your HTML, scripts, and stylesheets at the same time in one file.
 
 They are located in the `/src/components/` directory.
 
