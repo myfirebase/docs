@@ -10,12 +10,12 @@
 **Myfirebase** Is a decoupled single page application framework which is highly compatible with [Google Firebase](https://firebase.google.com). It has some really cool features.
 
 
- - **Easy to use** : With a simple, clear and well organised directory structure.
+ - **Easy to use**: With a simple, clear and well-organized directory structure.
 
- - **Separation of concerns** : Using [Vuejs](https://vuejs.org) components and [Vuex](https://vuex.vuejs.org) for the state management system.
+ - **Separation of concerns**: Using [Vuejs](https://vuejs.org) components and [Vuex](https://vuex.vuejs.org) for the state management system.
 
- - **Firebase** : Using the best of Google Firebase features such as, Authentication, Realtime Database, Cloud storage and others...
+ - **Firebase**: Using the best of Google Firebase features such as Authentication, Realtime Database, Cloud storage and others.
 
- - **Progressive web applications** : PWA made easy.
+ - **Progressive web applications**: PWA made easy.
 
- - **Material design** : Material components using [vue-material](https://vuematerial.github.io).
+ - **Material design**: Material components using [vue-material](https://vuematerial.github.io).
