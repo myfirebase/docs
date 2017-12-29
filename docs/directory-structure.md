@@ -12,13 +12,13 @@ Your main code lives here, Where the application core is located, `firebase`, ro
 
  - `/src/assets` directory, where you can write your global sass/scss preprocessor.
 
- - `/src/firebase` directory, contains firebase SDK class and config.js file, 
+ - `/src/firebase` directory, contains firebase SDK classes and config.js file, 
 
  - `/src/routes` directory, where you can define your application routes, [Vuejs Routes Docs](https://router.vuejs.org/en/). 
 
  - main.js file where your application core is defined. 
 
- - `/src/component` directory as the name implies, contains all of your application components files, here wjere you can create new Vue components, according to vuejs, components took **.vue** as extemsion, see [Vuejs Components](https://vuejs.org/v2/guide/components.html).
+ - `/src/component` directory as the name implies, contains all of your application components files, here where you can create new Vue components, according to vuejs, components took **.vue** as extension, see [Vuejs Components](https://vuejs.org/v2/guide/components.html).
 
 For sure, you are free to define and organize this directory structure however you like.
 
@@ -27,25 +27,21 @@ For sure, you are free to define and organize this directory structure however y
 !!! tip "Firebase Cloud functions docs"
     New to firebase?, please see [Firebase Cloud functions docs](https://firebase.google.com/docs/functions/).
 
-Firebase cloud functions directory, where the cloud functions are located, in this directory you could write some back-end functions to handle cloud messaging and business logic if necessary and alot of advanced stufs. 
+Firebase cloud functions directory, where the cloud functions are located, in this directory you could write some back-end functions to handle cloud messaging and business logic if necessary and a lot of advanced stuff.
 
 !!! tip "Google Cloud Platform"
-    It's become more easier to integrate some advanced stufs such like machine learning and image processing with [Google Cloud Platform](https://cloud.google.com).
+    It's become easier to integrate some advanced kinds of stuff such as machine learning and image processing with [Google Cloud Platform](https://cloud.google.com).
 
 #### `/storage`
 
-The storage directory contains all of your storage files.
-
-**What is storage??**
-
-Storage contains state management pattern + library for Vue.js applications files, Thanks to Vuex for keeping components communicating to each other, see [Vuex](https://vuex.vuejs.org/en/).
+The storage directory contains all of your storage files, using one of Vuejs eco-system, see [Vuex](https://vuex.vuejs.org/en/).
 
 #### `/public`
 
-Public directory contains the main index.html file, this directory also houses all of your application compiled assets files css/js and service-workers as well, **these assets will be auto injected to index.html**
+Public directory contains the main index.html file, this directory also houses all of your application compiled assets CSS, JS files and service-workers as well, **these assets will be auto injected to index.html**
 
 !!! note "service workers"
-    Google developers had made some cool articles about service, see [Service Workers: an Introduction](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers).
+    Google developers had made some cool articles about the service-worker concept, see [Service Workers: an Introduction](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers).
 
  - index.html *index page*
 
@@ -63,16 +59,16 @@ Public directory contains the main index.html file, this directory also houses a
 
 #### `/build`
 
-Apparently, you may not touch anything right here, this directory contains all the **build** files managed by node.js
+Apparently, you may not touch anything right here, this directory contains all the **build** files managed by node.js unless you want to specify some of your additional configuration such as development server port, service-workers or even changing web pack configuration.
 
 #### `/config`
 
-Where development and production mode configurations are located.
+Where the development and the production mode configuration are located.
 
 #### `/static`
 
-Where static files are located, images and icons are used as a static assets into your applications and provide them to support Progressive web applications.
+Where static files are located, images and icons are used as a static assets into your applications.
 
 #### `/tests`
 
-Where your application tests are located, by defualt Myfirebase comes with eslint and karma for unit testing, you are free to integrate others libraries and plugins such like [night watch](http://nightwatchjs.org/) e2e.
+Where your application tests are located, by default Myfirebase comes with eslint and karma for unit testing, you are free to integrate others libraries and plugins such as [night watch](http://nightwatchjs.org/) e2e.
