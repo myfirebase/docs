@@ -1,7 +1,7 @@
 !!! tip "Firebase Cloud functions docs"
     Please check the firebase cloud functions [docs](https://firebase.google.com/docs/functions/).
 
-Basically, Myfirebase comes with `/functions` directory where you could define and organize your functions and deploy them easily.
+Basically, Myfirebase comes with `/functions` directory where you could define and organize your functions and deploy them efficiently.
 
 Functions directory houses index.js, package.json and node modules, so you can organize and structure this directory however you like.
 
@@ -15,7 +15,7 @@ $ cd functions
 $ npm install
 ```
 
-By defualt, index.js comes with an example of sending a push notification after `onWrite` event.
+By default, index.js comes with an example of sending a push notification after the `onWrite` event.
 
 ```js
 // index.js
@@ -59,5 +59,5 @@ exports.sendMessageNotification = functions.database.ref('data/{messageID}').onW
 
 As you can see it's easy to write functions with firebase cloud functions.
 
-!!! info "Firebase cloude messaging" 
-    This example of sending push notification requires to register a service-worker through client site (browser) which is already defined in this project, check the following link [Cloud Messaging](cloud-messaging.md).
+!!! info "Firebase cloud messaging" 
+    This example of sending push notification requires registering a service-worker through client site (browser) which is already defined in this project, check the following link [Cloud Messaging](cloud-messaging.md).
