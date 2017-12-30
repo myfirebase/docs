@@ -1,7 +1,7 @@
 !!! tip
-    It's recommended to take a look at the firebase storage docs, please check [firebase storage docs](https://firebase.google.com/docs/storage/web/start).
+    It's recommended to take a look at the firebase storage docs, please check the following link [firebase storage docs](https://firebase.google.com/docs/storage/web/start).
 
-Myfirebase provides a simple way to interact with firebase storage via a global instance called `$sotrage`.
+Myfirebase provides a simple way to interact with firebase storage via a global instance called `$storage`.
 
 #### Myfirebase Storage instance
 
@@ -15,7 +15,7 @@ Syntax : `$storage`
 
 Syntax : `$storage.get()`
 
-You can retreive firebase storage object usign `get()` method.
+You can retrieve firebase storage object using `get()` method.
 
 <hr>
 
@@ -23,7 +23,7 @@ You can retreive firebase storage object usign `get()` method.
 
 Syntax : `$storage.getDownloadURL(object)`
 
-You can get your file URL such like user avatar or document which stored through firebase storage using `getDownloadURL`.
+You can get your file URL of the user avatar or document which stored through firebase storage using `getDownloadURL`.
 
 ##### Example
 
@@ -62,11 +62,11 @@ You can get your file URL such like user avatar or document which stored through
 
 Sytax : `$storage.upload(object)`
 
-You can upload a file to firebase storage usign `upload(object)`.
+You can upload a file to firebase cloud storage using `upload(object)`.
 
 ##### Example
 
-We are going to upload a new file to the server usign upload method.
+We are going to upload a new file to the server using upload method.
 
 ```html
 <template>
@@ -122,7 +122,7 @@ Syntax : `$storage.delete(string)`
 
 You can delete a file with `delete` method specifying the file path.
 
-> file path is a storage path where the concerned file is located.
+> The file's path is a storage path where the concerned file is located.
 
 ##### Example
 
