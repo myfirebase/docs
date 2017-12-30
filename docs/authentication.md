@@ -1,8 +1,8 @@
 
 !!! tip 
-    It's recommended to take a look at the firebase authentication docs, please check [firebase auth docs](https://firebase.google.com/docs/auth/web/start).
+    It's recommended to take a look at the firebase authentication docs, please check the following link[firebase auth docs](https://firebase.google.com/docs/auth/web/start).
 
-How hard it is to integrate **Firebase auth** to your web project especially when you try to structure and orginize firebase auth globally to be used through all **Vue components**.
+How hard it is to integrate **Firebase auth** to your web project especially when you try to structure and organize firebase auth globally to be used through all **Vue components**.
 
 Thanks to **Myfirebase auth system** which makes firebase auth easier to be managed using **Vuex**, the fireabse auth is injected and triggered at beginning of the Vue instance.
 
@@ -81,7 +81,7 @@ Syntax : `$auth.getUser()`
 
 #### Update Profile Picture
 
-You can update profile pricture usign `updateProfilePicture(object)` method, this will update the default firebase user **profileURL**.
+You can update profile avatar usign `updateProfilePicture(object)` method, this will update the default firebase user **profileURL**.
 
 !!! tip
     Before you start updating profile picture, make sure that you have uploaded that picture to firebase storage, and get photoURL, see [Upload a file with Myfirebase]().
@@ -126,7 +126,7 @@ Syntax : `$auth.updateProfilePicture(object)`
 
 Syntax : `$auth.state(object)`
 
-Consider it just like a auth middleware where you can check if the user is signed in or not, you can also redirect user to an other component if he doesn't signed in.
+Consider it just like an auth middleware where you can check if the user is signed in or not, you can also redirect the user to another component if he doesn't sign in.
 
 ##### Example
 
@@ -166,7 +166,7 @@ Consider it just like a auth middleware where you can check if the user is signe
 
 #### Auth check
 
-Just like **auth state** but without redirection.
+It's the same as **auth state** but without redirection.
 
 Syntax : `$auth.check(object)`
 
@@ -270,7 +270,7 @@ Synax : `$auth.registerWithEmailAndPassword(object)`
 
 #### SignIn with email and password
 
-To signin a user with email and passowrd.
+To sign in a user with email and passowrd.
 
 Syntax : `$auth.loginWithEmailAndPassword(object)`
 
@@ -329,7 +329,7 @@ Syntax : `$auth.loginWithEmailAndPassword(object)`
 
 #### SignIn with google
 
-let your users authenticate with Firebase using their **Google accounts**.
+Allow the users to authenticate to Firebase using their **Google accounts**.
 
 Syntax : `$auth.signInWithGoogle(object)`
 
@@ -384,7 +384,7 @@ Syntax : `$auth.signInWithGoogle(object)`
 
 #### SignIn with Facebook
 
-To let your users authenticate with Firebase using their **Facebook Accounts**.
+Allow the users to authenticate to Firebase using their **Facebook Accounts**.
 
 Syntax : `$auth.signInWithFacebook(object)`
 
@@ -392,7 +392,7 @@ Syntax : `$auth.signInWithFacebook(object)`
 
 #### SignIn with Twitter
 
-To let your users authenticate with Firebase using their **Twitter Accounts**.
+Allow the users to authenticate to Firebase using their **Twitter Accounts**.
 
 Syntax : `$auth.signInWithTwitter(object)`
 
@@ -400,7 +400,7 @@ Syntax : `$auth.signInWithTwitter(object)`
 
 #### SignIn with Github
 
-To let your users authenticate with Firebase using their **Github Accounts**.
+Allow the users to authenticate to Firebase using their **Github Accounts**.
 
 Syntax : `$auth.signInWithGithub(object)`
 
