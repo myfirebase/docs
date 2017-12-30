@@ -7,15 +7,17 @@ Myfirebase is using Vuejs routes system, all routes are located in `/src/routes/
 
 By default, Myfirebase has some default routes already defined in `routes.js` file.
 
-- Landing component: which is the parent of all other components.
+- Layout.vue: which is the default layout of our application.
 
-- Welcome component: which is a default landing component.
+- Welcome.vue: which is a default welcoming component.
 
-- Login component: which is responsible for authenticating users (register/login/logout) using firebase authentication.
+- Login.vue: which is responsible for authenticating users (register/login/logout) using firebase authentication.
 
-- UpdateProfile: which is responsible for updating user profile (email/password) and user avatar using firebase cloud storage.
+- UpdateProfile.vue: which is responsible for updating user profile (email/password) and user avatar using firebase cloud storage.
 
-- App component: which is a default app example to create/read data to the firebase database.
+- App.vue: which is the default component to start playing with the firebase database.
+
+- Firestore.vue: which is the default component to start playing with the cloud firestore.
 
 ```javascript
 
@@ -24,6 +26,7 @@ import Welcome from '@/components/Welcome'
 import Login from '@/components/auth/Login'
 import UpdateProfile from '@/components/auth/UpdateProfile'
 import App from '@/components/App'
+import Firestore from "@/components/Firestore"
 
 import Vue from 'vue'
 
@@ -52,6 +55,14 @@ const routes = [{
                 path: '/app',
                 component: App,
                 name: 'Main app',
+                meta: {
+                    auth: true
+                }
+            },
+            {
+                path: '/firestore',
+                component: Firestore.
+                name: 'firestore',
                 meta: {
                     auth: true
                 }
