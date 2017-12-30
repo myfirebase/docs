@@ -1,4 +1,4 @@
-Myfirebase ships with [vue-material](http://vuematerial.io) to build well-crafted apps with Material Design and Vue 2, thats make working with material-design and JavaScript a joy.
+Myfirebase ships with the [vue-material](http://vuematerial.io) to build well-crafted apps with Material Design and Vue 2, that makes working with material-design and JavaScript a joy.
 
 By default, vue-material is already integrated into this project, you can specify your favorite theme color in `/src/main.js`
 
@@ -98,4 +98,4 @@ As you may know, Myfrebase has a default SASS/SCSS file located in `/src/assets/
 `.flex-spinner` and `.overlay` class will be triggered globally in your application so you can start using them in every single component you create.
 
 !!! tip
-    Not familiar with material design?, you're free to choose what ever type of css frameworks you want to work with such like bootstrap or bulma.
+    Not familiar with material design? you're free to choose whatever type of CSS frameworks you want to work with such as bootstrap or Bulma.
