@@ -1,6 +1,31 @@
 site_name: Myfirebase docs
 
-theme_dir: 'mkdocs-material/material'
+# Configuration
+theme:
+  name: null
+  custom_dir: mkdocs-material/material
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  feature:
+    tabs: true
+  palette:
+    primary: indigo
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/images/favicon.png
+  logo:
+    icon: "\uE80C"
 
 repo_name: myfirebase/myfirebase
 repo_url: https://github.com/myfirebase/myfirebase
