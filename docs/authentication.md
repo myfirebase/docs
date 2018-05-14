@@ -347,7 +347,7 @@ Return : `Promise`
 
 Allow the users to authenticate to Firebase using their **Facebook Accounts**.
 
-Syntax : `$auth.signInWithFacebook(object)`
+Syntax : `$auth.signInWithFacebook()`
 Return : `Promise`
 
 <hr>
@@ -356,7 +356,8 @@ Return : `Promise`
 
 Allow the users to authenticate to Firebase using their **Twitter Accounts**.
 
-Syntax : `$auth.signInWithTwitter(object)`
+Syntax : `$auth.signInWithTwitter()`
+Return : `Promise`
 
 <hr>
 
@@ -364,7 +365,8 @@ Syntax : `$auth.signInWithTwitter(object)`
 
 Allow the users to authenticate to Firebase using their **Github Accounts**.
 
-Syntax : `$auth.signInWithGithub(object)`
+Syntax : `$auth.signInWithGithub()`
+Return : `Promise`
 
 <hr>
 
@@ -373,3 +375,4 @@ Syntax : `$auth.signInWithGithub(object)`
 To sign out a user, call `logout`.
 
 Syntax : `$auth.logout()`
+Return : `Promise`
