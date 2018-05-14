@@ -27,13 +27,13 @@ Syntax : `$auth`
 
 <script>
     export default {
-        mounted() {
+        mounted () {
             // retrieve username.
             this.userName = this.$auth.user().displayName
             // retrieve user email.
             this.userEmail = this.$auth.user().email
         },
-        data() {
+        data () {
             return {
                 userName: ''
             }
@@ -65,7 +65,7 @@ Syntax : `$auth.getUser()`
 ```html
 <script>
     export default {
-        mounted() {
+        mounted () {
             // get current user
             let user = this.$auth.getUser()
             // get email
@@ -100,15 +100,15 @@ Return : `Promise`
                 picture: 'https://link-to-photo.test/profile.png'
             }
         },
-        methods:{
+        methods: {
             // update profile picture
-            updateProfilePicture() {
+            updateProfilePicture () {
                 this.$auth.updateProfilePicture(this.picture)
-                    .then(() =>{
-                        // updated
-                    }).catch((error) => {
-                        // error
-                    })
+                .then(() => {
+                    // updated
+                }).catch((error) => {
+                    // error
+                })
             }
         }
     }
@@ -135,7 +135,7 @@ Consider it just like an auth middleware where you can check if the user is sign
 
 <script>
     export default {
-        mounted() {
+        mounted () {
             // Check if the user signed in with redirection.
             this.$auth.state('/app', '/login')
             .then((user) => {
@@ -144,7 +144,7 @@ Consider it just like an auth middleware where you can check if the user is sign
                 console.log(error.message)
             })
         },
-        data() {
+        data () {
             return {
                 userName: ''
             }
@@ -178,14 +178,17 @@ Return : `Promise`
 
 <script>
     export default {
-        mounted() {
+        mounted () {
             // Check if the user signed in without redirection. 
-            this.$auth.check().then((user) => {
+            this.$auth.check()
+            .then((user) => {
                 this.signed = true
                 this.userName = user.displayName
-            }).catch((error) => console.log(error.message))
+            }).catch((error) => {
+                console.log(error.message)
+            })
         },
-        data() {
+        data () {
             return {
                 userName: '',
                 signed: false,
@@ -217,7 +220,7 @@ Return : `Promise`
 
 <script>
     export default {
-        mounted() {
+        mounted () {
             // Check if the user signed in with redirection. 
             this.$auth.state('/app', '/login')
             .then((user) => {
@@ -226,20 +229,20 @@ Return : `Promise`
                 console.log(error.message)
             })
         },
-        data() {
+        data () {
             return {
                 email: '',
                 password: '',
             }
         },
         methods: {
-            registerWithEmailAndPassword(){
+            registerWithEmailAndPassword () {
                 this.$auth.registerWithEmailAndPassword(this.eamil, this.password)
-                    .then((user) => {
-                        console.log(`User Email : ${user.email}`)
-                    }).catch(error => {
-                        // error
-                    })
+                .then((user) => {
+                    console.log(`User Email : ${user.email}`)
+                }).catch(error => {
+                    // error
+                })
             }
         }
     }
@@ -267,7 +270,7 @@ Return : `Promise`
 
 <script>
     export default {
-        mounted() {
+        mounted () {
             // Check if the user signed in with redirection. 
             this.$auth.state('/app', '/login')
             .then((user) => {
@@ -276,21 +279,21 @@ Return : `Promise`
                 console.log(error.message)
             })
         },
-        data() {
+        data () {
             return {
                 email: '',
                 password: '',
             }
         },
         methods: {
-            loginWithEmailAndPassword() {
+            loginWithEmailAndPassword () {
                 // login with email and password
                 this.$auth.loginWithEmailAndPassword(this.email, this.password)
-                    .then((user) => {
-                        console.log(user.email)
-                    }).catch((error) => {
-                        console.log(error.message)
-                    })
+                .then((user) => {
+                    console.log(user.email)
+                }).catch((error) => {
+                    console.log(error.message)
+                })
             }
         }
     }
@@ -318,7 +321,7 @@ Return : `Promise`
 
 <script>
     export default {
-        mounted() {
+        mounted () {
             // Check if the user signed in with redirection. 
             this.$auth.state('/app', '/login')
             .then((user) => {
@@ -327,19 +330,19 @@ Return : `Promise`
                 console.log(error.message)
             })
         },
-        data() {
+        data () {
             return {
             }
         },
         methods: {
-            signInWithGoogle() {
+            signInWithGoogle () {
                 // SignIn with google
                 this.$auth.signInWithGoogle()
-                    .then(user => {
-                        //
-                    }).catch(error => {
-                        //
-                    })
+                .then(user => {
+                    console.log(user.email)
+                }).catch(error => {
+                    console.log(error.message)
+                })
             }
         }
     }
