@@ -331,9 +331,9 @@ Return : `Promise`
                 // SignIn with google
                 this.$auth.signInWithGoogle()
                     .then(user => {
-
+                        //
                     }).catch(error => {
-
+                        //
                     })
             }
         }
@@ -348,6 +348,7 @@ Return : `Promise`
 Allow the users to authenticate to Firebase using their **Facebook Accounts**.
 
 Syntax : `$auth.signInWithFacebook(object)`
+Return : `Promise`
 
 <hr>
 
