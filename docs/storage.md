@@ -119,6 +119,7 @@ We are going to upload a new file to the server using upload method.
 #### Delete file
 
 Syntax : `$storage.delete(string)`
+Return : `Promise`
 
 You can delete a file with `delete` method specifying the file path.
 
@@ -141,14 +142,11 @@ You can delete a file with `delete` method specifying the file path.
         },
         methods: {
             delete() {
-                this.$storage.delete({
-                    ref: this.file,
-                    result: () => {
-                        console.log("Deleted")
-                    },
-                    error: (error) => {
-                        console.log(error.message)
-                    }
+                this.$storage.delete(this.file)
+                .then(() => {
+                    console.log("Deleted")
+                }).catch((error) => {
+                    console.log(error.message)
                 })
             }
         }
