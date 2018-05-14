@@ -86,7 +86,8 @@ You can update profile avatar usign `updateProfilePicture(object)` method, this 
 !!! tip
     Before you start updating profile picture, make sure that you have uploaded that picture to firebase storage, and get photoURL, see [Upload a file with Myfirebase]().
 
-Syntax : `$auth.updateProfilePicture(object)`
+Syntax : `$auth.updateProfilePicture(String)`
+Return : `Promise`
 
 ##### Example
 
@@ -117,7 +118,8 @@ Syntax : `$auth.updateProfilePicture(object)`
 
 #### Auth state
 
-Syntax : `$auth.state(object)`
+Syntax : `$auth.state(String, String)`
+Return : `Promise`
 
 Consider it just like an auth middleware where you can check if the user is signed in or not, you can also redirect the user to another component if he doesn't sign in.
 
@@ -157,7 +159,8 @@ Consider it just like an auth middleware where you can check if the user is sign
 
 It's the same as **auth state** but without redirection.
 
-Syntax : `$auth.check(object)`
+Syntax : `$auth.check()`
+Return : `Promise`
 
 ##### Example
 
@@ -198,7 +201,8 @@ Syntax : `$auth.check(object)`
 
 To register a new user with email and password.
 
-Synax : `$auth.registerWithEmailAndPassword(object)`
+Synax : `$auth.registerWithEmailAndPassword()`
+Return : `Promise`
 
 ##### Example
 
@@ -247,7 +251,8 @@ Synax : `$auth.registerWithEmailAndPassword(object)`
 
 To sign in a user with email and passowrd.
 
-Syntax : `$auth.loginWithEmailAndPassword(object)`
+Syntax : `$auth.loginWithEmailAndPassword(String, String)`
+Return : `Promise`
 
 ##### Example
 
