@@ -298,7 +298,8 @@ Syntax : `$auth.loginWithEmailAndPassword(object)`
 
 Allow the users to authenticate to Firebase using their **Google accounts**.
 
-Syntax : `$auth.signInWithGoogle(object)`
+Syntax : `$auth.signInWithGoogle()`
+Return : `Promise`
 
 ##### Example
 
@@ -314,15 +315,11 @@ Syntax : `$auth.signInWithGoogle(object)`
     export default {
         mounted() {
             // Check if the user signed in with redirection. 
-            this.$auth.state({
-                forward: '/app',
-                redirect: '/login',
-                then: (user) => {
-                    //
-                },
-                catch: (error) => {
-                    console.log(error.message)
-                }
+            this.$auth.state('/app', '/login')
+            .then((user) => {
+                // user signed-in
+            }).catch(error => {
+                console.log(error.message)
             })
         },
         data() {
@@ -332,15 +329,12 @@ Syntax : `$auth.signInWithGoogle(object)`
         methods: {
             signInWithGoogle() {
                 // SignIn with google
-                this.$auth.signInWithGoogle({
-                    result: (user) => {
-                        // This gives you a Google Access Token. You can use it to access the Google API.
-                        // The signed-in user info.
-                    },
-                    error: (error) => {
-                        console.log(error.message)
-                    }
-                });
+                this.$auth.signInWithGoogle()
+                    .then(user => {
+
+                    }).catch(error => {
+
+                    })
             }
         }
     }
