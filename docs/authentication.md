@@ -93,9 +93,6 @@ Syntax : `$auth.updateProfilePicture(object)`
 ```html
 <script>
     export default {
-        mounted () {
-
-        },
         data () {
             return {
                 // link to profile photo
@@ -105,16 +102,12 @@ Syntax : `$auth.updateProfilePicture(object)`
         methods:{
             // update profile picture
             updateProfilePicture() {
-                this.$auth.updateProfilePicture({
-                    // picture link
-                    ref: this.picture,
-                    result: () => {
-                        //updated
-                    },
-                    error: (error) => {
-                        console.log(error.message)
-                    }
-                })
+                this.$auth.updateProfilePicture(this.picture)
+                    .then(() =>{
+                        // updated
+                    }).catch((error) => {
+                        // error
+                    })
             }
         }
     }
@@ -141,16 +134,12 @@ Consider it just like an auth middleware where you can check if the user is sign
 <script>
     export default {
         mounted() {
-            // Check if the user signed in with redirection. 
-            this.$auth.state({
-                forward: '',
-                redirect: '/login',
-                then: (user) => {
-                    this.userName = user.displayName 
-                },
-                catch: (error) => {
-                    console.log(error.message)
-                }
+            // Check if the user signed in with redirection.
+            this.$auth.state('/app', '/login')
+            .then((user) => {
+                this.userName = user.displayName
+            }).catch(error => {
+                console.log(error.message)
             })
         },
         data() {
@@ -188,15 +177,10 @@ Syntax : `$auth.check(object)`
     export default {
         mounted() {
             // Check if the user signed in without redirection. 
-            this.$auth.check({
-                then: (user) => {
-                    this.signed = true
-                    this.userName = user.displayName 
-                },
-                catch: (error) => {
-                    console.log(error.message)
-                }
-            })
+            this.$auth.check().then((user) => {
+                this.signed = true
+                this.userName = user.displayName
+            }).catch((error) => console.log(error.message))
         },
         data() {
             return {
@@ -231,15 +215,11 @@ Synax : `$auth.registerWithEmailAndPassword(object)`
     export default {
         mounted() {
             // Check if the user signed in with redirection. 
-            this.$auth.state({
-                forward: '/app',
-                redirect: '/login',
-                then: (user) => {
-                    //
-                },
-                catch: (error) => {
-                    console.log(error.message)
-                }
+            this.$auth.state('/app', '/login')
+            .then((user) => {
+                // user signed-in
+            }).catch(error => {
+                console.log(error.message)
             })
         },
         data() {
@@ -250,17 +230,12 @@ Synax : `$auth.registerWithEmailAndPassword(object)`
         },
         methods: {
             registerWithEmailAndPassword(){
-                // register user with email and password
-                this.$auth.registerWithEmailAndPassword({
-                    email: this.email,
-                    password: this.password,
-                    result: (user) => {
-                        console.log("User Email : " + user.email)
-                    },
-                    error: (error) => {
-                        console.log(error.message)
-                    }
-                });
+                this.$auth.registerWithEmailAndPassword(this.eamil, this.password)
+                    .then((user) => {
+                        console.log(`User Email : ${user.email}`)
+                    }).catch(error => {
+                        // error
+                    })
             }
         }
     }
@@ -289,15 +264,11 @@ Syntax : `$auth.loginWithEmailAndPassword(object)`
     export default {
         mounted() {
             // Check if the user signed in with redirection. 
-            this.$auth.state({
-                forward: '/app',
-                redirect: '/login',
-                then: (user) => {
-                    //
-                },
-                catch: (error) => {
-                    console.log(error.message)
-                }
+            this.$auth.state('/app', '/login')
+            .then((user) => {
+                // user signed-in
+            }).catch(error => {
+                console.log(error.message)
             })
         },
         data() {
@@ -309,16 +280,12 @@ Syntax : `$auth.loginWithEmailAndPassword(object)`
         methods: {
             loginWithEmailAndPassword() {
                 // login with email and password
-                this.$auth.loginWithEmailAndPassword({
-                    email: this.email,
-                    password: this.password,
-                    result: (user) => {
-                        console.log("User Email : " + user.email)
-                    },
-                    error: (error) => {
+                this.$auth.loginWithEmailAndPassword(this.email, this.password)
+                    .then((user) => {
+                        console.log(user.email)
+                    }).catch((error) => {
                         console.log(error.message)
-                    }
-                });
+                    })
             }
         }
     }
