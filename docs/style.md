@@ -26,7 +26,7 @@ Vue.material.registerTheme('login', {
 
 #### Define global styles
 
-As you may know, Myfrebase has a default SASS/SCSS file located in `/src/assets/sass/app.scss`, this file contains all vue-material SASS dependencies, you're free to choose whatever you want to work with, this file is compiled down via webpack automatically and injecting it into `index.html` while running `npm run build` or `npm run dev`.
+As you may know, Myfrebase has a default SASS/SCSS file located in `/src/assets/sass/app.scss`, this file contains all vue-material SASS dependencies, you're free to choose whatever you want to work with, this file is compiled down via webpack automatically and injected into `index.html` while running `npm run build` or `npm run dev`.
 
 ```css
 
