@@ -1,5 +1,5 @@
 
-As the name implies, the navigation guards provided by vue-router are primarily used to guard navigations either by redirecting it or canceling it. There are a number of ways to hook into the route navigation process: globally, per-route, or in-component.
+As the name implies, the navigation guards provided by vue-router are primarily used to guard navigation either by redirecting it or canceling it. There are a number of ways to hook into the route navigation process: globally, per-route, or in-component.
 
 !!! warning
     Remember that params or query changes won't trigger enter/leave navigation guards. You can either watch the $route object to react to those changes or use the beforeRouteUpdate in-component guard, see [vue-router global navigation guards](https://router.vuejs.org/en/advanced/navigation-guards.html).
@@ -8,7 +8,7 @@ As the name implies, the navigation guards provided by vue-router are primarily 
 
 #### Creating middleware
 
-Myfirebase provides a simple way to create navigations guards or middlewares, you could simply run `myfirebase new:middleware <middleware-name>`. Myfirebase-cli will generate a middleware template for you located in `/src/middlewares/` directory.
+Myfirebase provides a simple way to create navigations guards or middlewares, you could simply run `myfirebase new:middleware <middleware-name>`. Myfirebase-cli will generate a middleware template for you located in the `/src/middlewares/` directory.
 
 Typically, The middleware generated might look something like this:
 
@@ -56,7 +56,7 @@ export default middlewares
 
 #### Auth Middleware
 
-Myfirebase comes with an example called AuthMiddleware located in middlewares directory, this will check if the user is signed-in or not, and be redirecting users to the login page.
+Myfirebase comes with an example called AuthMiddleware located in middlewares directory, this will check if the user is signed-in or not, and redirect users to the login page.
 
 As you may notice, you will find in the **route.js** file a **metadata** called auth, which is assigned to **App** and **UpdateProfile** components.
 

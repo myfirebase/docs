@@ -1,8 +1,8 @@
 #### Prerequisites
 
-1. **NPM** is the recommended installation method when building large-scaled applications with **Myfirebase**.
+1. **NPM** is the recommended installation method when building large-scale applications with **Myfirebase**.
 
-    If this is the first time you want to give **npm** a shot, don't worry, we got exactly what you need.
+    If this is the first time you are trying **npm** , don't worry, we'll guide you every step of the way.
 
     - [How to Install Node.js and NPM on Windows](http://blog.teamtreehouse.com/install-node-js-npm-windows)
 
@@ -16,7 +16,7 @@
 
 #### Installing Myfirebase
 
-- Create new Myfirebase project via myfirebase-cli. 
+- Create a new Myfirebase project via myfirebase-cli. 
 
 ```shell
 # Create new project with myfirebase-cli

@@ -1,10 +1,10 @@
-At the high level, components are custom elements that Vue compiler would attach specified behavior too. They contain your HTML, scripts, and stylesheets at the same time in one file.
+A little advanced, components are custom elements that Vue compiler would attach specified behaviors too. They contain your HTML, scripts, and stylesheets at the same time all in one file.
 
 They are located in the `/src/components/` directory.
 
-To create a new component you could run `new:component command` in your terminal.
+To create a new component you need to run `new:component command` in your terminal.
 
-`myfirebase new:component <component-name>`, the Myfirebase-CLI will generate a new component and put it inside your application `/src/components/<component-name>.vue`.
+`myfirebase new:component <component-name>`, the Myfirebase-CLI will generate a new component and place it inside your components directory `/src/components/<component-name>.vue`.
 
 A simple component might look something like this:
 

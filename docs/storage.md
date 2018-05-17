@@ -7,7 +7,7 @@ Myfirebase provides a simple way to interact with firebase storage via a global 
 
 Syntax : `$storage`
 
-`$auth` is a global auth instance which called through Vue component.
+`$auth` is a global auth instance which called through the Vue component.
 
 <hr>
 
@@ -23,7 +23,7 @@ You can retrieve firebase storage object using `get()` method.
 
 Syntax : `$storage.getDownloadURL(object)`
 
-You can get your file URL of the user avatar or document which stored through firebase storage using `getDownloadURL`.
+You can get the file URL of the user avatar or document which stored through firebase storage using `getDownloadURL`.
 
 ##### Example
 
@@ -152,4 +152,4 @@ You can delete a file with `delete` method specifying the file path.
         }
     }
 </script>
-```
+``` 
