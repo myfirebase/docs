@@ -40,6 +40,4 @@ messaging.setBackgroundMessageHandler(function(payload) {
 
 ```
 
-This service worker will handle notification messages even in the background when the user is not opening the browser.
-
-To send a notification message to a client you could write your logic through a single firebase cloud function, we already have an example, check the following link [Cloud functions](cloud-functions.md).
+This service worker will handle notification messages even in the background when the users browser is not opened the .
