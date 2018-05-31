@@ -1,7 +1,7 @@
 Firebase cloud messaging is a powerful tool that provides a simple mechanism to deliver push notifications easily to your Android, IOS or web applications.
 
 !!! tip "Firebase Cloud Messaging"
-    Please check FCM [docs](https://firebase.google.com/docs/cloud-messaging/)
+    Please check FCM [docs](https://firebase.google.com/docs/cloud-messaging/).
 
 ### FCM and Myfirebase
 
@@ -40,4 +40,4 @@ messaging.setBackgroundMessageHandler(function(payload) {
 
 ```
 
-This service worker will handle notification messages even in the background when the users browser is not opened the .
+This service worker will handle notification messages in the background.
