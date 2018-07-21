@@ -24,4 +24,4 @@ Would you like to contibute to Myfirebase docs? that's awesome..
 
 `$ mkdocs serve`
 
-Feel free to submit an issue or pull request.
+Feel free to submit any issue or pull request.
