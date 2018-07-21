@@ -1,5 +1,9 @@
 site_name: Myfirebase docs
 
+theme:
+  logo:
+    icon: 'docs/img/favicon.png'
+
 # Configuration
 theme:
   name: null
@@ -43,6 +47,9 @@ pages:
     - "Routing": 'routing.md'
     - "State Managment System": 'store.md'
 
+- Database:
+    - "Realtime Database and Cloud Firestore": 'database.md'
+
 - Managing SCSS/SASS:
     - 'Material design and SASS/SCSS': 'style.md'
 
@@ -61,7 +68,6 @@ markdown_extensions:
   - codehilite(guess_lang=false)
   - toc(permalink=true)
 
-site_favicon: 'img/favicon.ico'
 
 extra:
   logo: 'img/MyFireBase.png'
