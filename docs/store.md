@@ -1,4 +1,4 @@
-Myfirebase is using Vuex which is a simple scalable state management system compatible with Vuejs, all Myfirebase states are located in `/storage` directory.
+Myfirebase is using Vuex which is a simple scalable state management system compatible with Vuejs, all of Myfirebase states are located in `/storage` directory.
 
 Storage directory houses `store.js`, `myfirebase-auth` and `myfirebase-storage`.
 

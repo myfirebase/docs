@@ -1,4 +1,4 @@
-By default, Myfirebase application structure provides a great starting point for your application. However, you are free to organize your files/directories as you like.
+By default, Myfirebases structure provides a great starting point for your application. However, you are free to organize your files/directories as you like.
 
 #### Root Directory
 
@@ -27,10 +27,10 @@ For sure, you are free to define and organize this directory structure however y
 !!! tip "Firebase Cloud functions docs"
     New to firebase?, please see [Firebase Cloud functions docs](https://firebase.google.com/docs/functions/).
 
-Firebase cloud functions directory, where the cloud functions are located, in this directory you could write some back-end functions to handle cloud messaging and business logic if necessary and a lot of advanced stuff.
+In the firebase cloud functions directory,you can write some back-end functions to handle cloud messaging and business logic if necessary and a lot of advanced stuff.
 
 !!! tip "Google Cloud Platform"
-    It's become easier to integrate some advanced kinds of stuff such as machine learning and image processing with [Google Cloud Platform](https://cloud.google.com).
+    It's become easier to integrate some advanced technologies such as machine learning and image processing with [Google Cloud Platform](https://cloud.google.com) and more.
 
 #### `/storage`
 
@@ -38,7 +38,7 @@ The storage directory contains all of your storage files, using one of Vuejs eco
 
 #### `/public`
 
-Public directory contains the main index.html file, this directory also houses all of your application compiled assets CSS, JS files and service-workers as well, **these assets will be auto injected to index.html**
+The public directory contains the main index.html file, it also houses all of your applications compiled assets CSS, JS files and service-workers, **these assets will be auto injected to index.html**
 
 !!! note "service workers"
     Google developers had made some cool articles about the service-worker concept, see [Service Workers: an Introduction](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers).
@@ -59,7 +59,7 @@ Public directory contains the main index.html file, this directory also houses a
 
 #### `/build`
 
-Apparently, you may not touch anything right here, this directory contains all the **build** files managed by node.js unless you want to specify some of your additional configuration such as development server port, service-workers or even changing web pack configuration.
+Apparently, you may not want to touch anything right here, this directory contains all the **build** files managed by node.js unless you want to specify some of your additional configuration such as development server port, service-workers or even changing web pack configuration, then you may proceed.
 
 #### `/config`
 
@@ -67,8 +67,8 @@ Where the development and the production mode configuration are located.
 
 #### `/static`
 
-Where static files are located, images and icons are used as a static assets into your applications.
+Where static files are located, images and icons are used as a static assets in your applications.
 
 #### `/tests`
 
-Where your application tests are located, by default Myfirebase comes with eslint and karma for unit testing, you are free to integrate others libraries and plugins such as [night watch](http://nightwatchjs.org/) e2e.
+Where your application tests are located, by default Myfirebase comes with eslint and karma for unit testing, you are free to integrate other libraries and plugins such as [night watch](http://nightwatchjs.org/) e2e.

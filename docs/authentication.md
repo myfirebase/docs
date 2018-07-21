@@ -2,9 +2,9 @@
 !!! tip 
     It's recommended to take a look at the firebase authentication docs, please check the following link[firebase auth docs](https://firebase.google.com/docs/auth/web/start).
 
-How hard it is to integrate **Firebase auth** to your web project especially when you try to structure and organize firebase auth globally to be used through all **Vue components**.
+How hard it is to integrate **Firebase auth** to your web project especially when you try to structure and organize firebase auth globally to be used through all your **Vue components**.
 
-Thanks to **Myfirebase auth system** which makes firebase auth easier to be managed using **Vuex**, the fireabse auth is injected and triggered at beginning of the Vue instance.
+Thanks to **Myfirebase auth system** it makes firebase auth easier to be managed using **Vuex**, its injected and triggered at beginning of the Vue instance.
 
 <hr>
 
@@ -12,7 +12,7 @@ Thanks to **Myfirebase auth system** which makes firebase auth easier to be mana
 
 Syntax : `$auth`
 
-`$auth` is a global auth instance which called through Vue component.
+`$auth` is a global auth instance which is called through the Vue component.
 
 ##### Example
 
@@ -84,7 +84,7 @@ Syntax : `$auth.getUser()`
 You can update profile avatar usign `updateProfilePicture(object)` method, this will update the default firebase user **profileURL**.
 
 !!! tip
-    Before you start updating profile picture, make sure that you have uploaded that picture to firebase storage, and get photoURL, see [Upload a file with Myfirebase]().
+    Before you start updating profile pictures, make sure that you have uploaded that picture to firebase storage, and got photoURL, see [Upload a file with Myfirebase]().
 
 Syntax : `$auth.updateProfilePicture(String)`
 Return : `Promise`
@@ -121,7 +121,7 @@ Return : `Promise`
 Syntax : `$auth.state(String, String)`
 Return : `Promise`
 
-Consider it just like an auth middleware where you can check if the user is signed in or not, you can also redirect the user to another component if he doesn't sign in.
+Consider it just like an auth middleware where you can check if the user is signed in or not, you can also redirect the user to another component if he is not signed in.
 
 ##### Example
 
@@ -202,7 +202,7 @@ Return : `Promise`
 
 #### Signup with email and password
 
-To register a new user with email and password.
+To register a new user with an email and password.
 
 Synax : `$auth.registerWithEmailAndPassword()`
 Return : `Promise`
@@ -252,7 +252,7 @@ Return : `Promise`
 
 #### SignIn with email and password
 
-To sign in a user with email and passowrd.
+To sign in a user with an email and passowrd.
 
 Syntax : `$auth.loginWithEmailAndPassword(String, String)`
 Return : `Promise`
@@ -304,7 +304,7 @@ Return : `Promise`
 
 #### SignIn with google
 
-Allow the users to authenticate to Firebase using their **Google accounts**.
+Allow users to authenticate to Firebase using their **Google accounts**.
 
 Syntax : `$auth.signInWithGoogle()`
 Return : `Promise`
@@ -353,7 +353,7 @@ Return : `Promise`
 
 #### SignIn with Facebook
 
-Allow the users to authenticate to Firebase using their **Facebook Accounts**.
+Allow users to authenticate to Firebase using their **Facebook Accounts**.
 
 Syntax : `$auth.signInWithFacebook()`
 Return : `Promise`
@@ -362,7 +362,7 @@ Return : `Promise`
 
 #### SignIn with Twitter
 
-Allow the users to authenticate to Firebase using their **Twitter Accounts**.
+Allow users to authenticate to Firebase using their **Twitter Accounts**.
 
 Syntax : `$auth.signInWithTwitter()`
 Return : `Promise`
@@ -371,7 +371,7 @@ Return : `Promise`
 
 #### SignIn with Github
 
-Allow the users to authenticate to Firebase using their **Github Accounts**.
+Allow users to authenticate to Firebase using their **Github Accounts**.
 
 Syntax : `$auth.signInWithGithub()`
 Return : `Promise`
