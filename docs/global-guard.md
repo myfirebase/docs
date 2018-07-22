@@ -120,9 +120,9 @@ const routes = [{
                 beforeEnter: (to, from, next) => {
                     // retrieve firebase Auth
                     var auth = Vue.auth;
-                    if(auth.user().email === "example@mail.com"){
+                    if (auth.user().email === "example@mail.com"){
                         next()
-                    }else{
+                    } else {
                         next({path: '/login'})
                     }
                 } 
