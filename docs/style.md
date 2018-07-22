@@ -1,37 +1,10 @@
-Myfirebase ships with the [vue-material](http://vuematerial.io) to build well-crafted apps with Material Design and Vue 2, that makes working with material-design and JavaScript a joy.
-
-By default, vue-material is already integrated into this project, you can specify your favorite theme color in `/src/main.js`
-
-```javascript
-...
-
-// Default
-Vue.material.registerTheme('default', {
-    primary: 'blue',
-    accent: 'red',
-    warn: 'orange',
-    background: 'white'
-})
-
-// Login
-Vue.material.registerTheme('login', {
-    primary: 'indigo',
-    accent: 'blue',
-    warn: 'black',
-    background: 'white'
-})
-
-...
-```
+Myfirebase ships with the [Vuetify](https://vuetifyjs.com) to build well-crafted apps with Material Design and Vue 2, that makes working with material-design and JavaScript a joy.
 
 #### Define global styles
 
-As you may know, Myfrebase has a default SASS/SCSS file located in `/src/assets/sass/app.scss`, this file contains all vue-material SASS dependencies, you're free to choose whatever you want to work with, this file is compiled down via webpack automatically and injected into `index.html` while running `npm run build` or `npm run dev`.
+As you may know, Myfrebase has a default SASS/SCSS file located in `/src/assets/sass/app.scss`, this file contains all **Vuetify** SASS dependencies, you're free to choose whatever you want to work with, this file is compiled down via webpack automatically and injected into `index.html` while running `npm run build` or `npm run dev`.
 
 ```css
-
-/* app.scss */
-
 /* Fonts */
 
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
@@ -42,33 +15,15 @@ As you may know, Myfrebase has a default SASS/SCSS file located in `/src/assets/
 /* @import "variables"; */
 
 
-/*VueMaterial css*/
+/* Vuetify css*/
 
-@import '~vue-material/dist/components/mdAvatar/index.css';
-@import '~vue-material/dist/components/mdBackdrop/index.css';
-@import '~vue-material/dist/components/mdButton/index.css';
-@import '~vue-material/dist/components/mdCard/index.css';
-@import '~vue-material/dist/components/mdCore/index.css';
-@import '~vue-material/dist/components/mdIcon/index.css';
-@import '~vue-material/dist/components/mdLayout/index.css';
-@import '~vue-material/dist/components/mdList/index.css';
-@import '~vue-material/dist/components/mdMenu/index.css';
-@import '~vue-material/dist/components/mdSelect/index.css';
-@import '~vue-material/dist/components/mdSidenav/index.css';
-@import '~vue-material/dist/components/mdSpeedDial/index.css';
-@import '~vue-material/dist/components/mdSubheader/index.css';
-@import '~vue-material/dist/components/mdTabs/index.css';
-@import '~vue-material/dist/components/mdToolbar/index.css';
-@import '~vue-material/dist/components/mdWhiteframe/index.css';
-@import '~vue-material/dist/components/mdSwitch/index.css';
-@import '~vue-material/dist/components/mdInputContainer/index.css';
-@import '~vue-material/dist/components/mdSnackbar/index.css';
-@import '~vue-material/dist/components/mdDialog/index.css';
-@import '~vue-material/dist/components/mdTable/index.css';
-@import '~vue-material/dist/components/mdSpinner/index.css';
-@import '~vue-material/dist/components/mdFile/index.css';
+@import '~vuetify/dist/vuetify.css';
 
 /*Global css*/
+
+.push-down {
+    margin-top: 15px;
+}
 
 .container {
     margin-top: 15px;
