@@ -108,3 +108,15 @@ export default {
 };
 </script>
 ```
+
+You can also update or remove a document from the database.
+
+Example:
+
+```javascript
+// delete document.
+this.Person.delete(key)
+
+// update document
+this.Person.update(key)
+```
