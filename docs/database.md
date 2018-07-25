@@ -120,3 +120,51 @@ this.Person.delete(key)
 // update document
 this.Person.update(key)
 ```
+
+### API
+
+#### Firebase database.
+
+Add JSON document.
+
+```
+Syntax: model.push()
+return: Promise
+```
+
+Delete JSON document.
+
+```
+Syntax: model.remove(document_key)
+return: Promise
+```
+
+Update JSON document.
+
+```
+Syntax: model.update(document_key)
+return: Promise
+```
+
+#### Cloud Firestore.
+
+Add JSON document.
+
+```
+Syntax: model.add()
+return: Promise
+```
+
+Delete JSON document.
+
+```
+Syntax: model.delete(document_key)
+return: Promise
+```
+
+Update JSON document.
+
+```
+Syntax: model.update(document_key)
+return: Promise
+```
