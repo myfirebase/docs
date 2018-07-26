@@ -37,6 +37,7 @@ Let say we've created a new component for managing users accounts.
 
 It becomes easy for us to add/remove documents to our database, we can add the Person object in Vue data property, and then initialize the Person object with the database reference which might be a real-time reference or Firestore ones, Myfirebase model binds on Person properties.
 
+
 We can add a new record to our database by:
 
 `push()` - in case of using real-time database.
@@ -44,6 +45,20 @@ We can add a new record to our database by:
 `add()` - in case of using Firestore database.
 
 Example:
+
+
+!!! info
+    1 - You need to import the model into the component.
+
+    `import Person from "@/models/Person"`
+
+    2 - Then you have to initialize the model with `init()` in the vue's data property.
+
+    ```
+      data: () => {
+        Person: new Person(database_ref).init()
+      }
+    ``` 
 
 ```html
 <template>
