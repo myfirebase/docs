@@ -1,13 +1,10 @@
 site_name: Myfirebase docs
 
-theme:
-  logo:
-    icon: 'docs/img/favicon.png'
-
 # Configuration
 theme:
   name: null
   custom_dir: mkdocs-material/material
+  favicon: 'assets/images/favicon.png'
 
   # 404 page
   static_templates:
@@ -28,8 +25,7 @@ theme:
     text: Roboto
     code: Roboto Mono
   favicon: assets/images/favicon.png
-  logo:
-    icon: "\uE80C"
+  logo: 'images/MyFireBase.svg'
 
 repo_name: myfirebase/myfirebase
 repo_url: https://github.com/myfirebase/myfirebase
